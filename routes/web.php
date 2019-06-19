@@ -20,7 +20,7 @@ Route::post('/opleiding_edit', 'AdminPanelController@editOpleidingIndex')->name(
 Route::post('/opleiding_update', 'AdminPanelController@updateOpleiding')->name("opleiding_update");
 
 Route::get('/view', 'GraphController@index');
-
+Route::get('/graph/{id}' , 'GraphController@graph');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
