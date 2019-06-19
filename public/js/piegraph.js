@@ -21,72 +21,89 @@ chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 chart.data = [
     {
         category: "No poverty",
-
-        value: waardes['poverty']
+        value: waardes['poverty'],
+        number: "1"
     },
     {
         category: "Zero Hunger",
-        value: waardes['hunger']
+        value: waardes['hunger'],
+        number: "2"
+
     },
     {
         category: "Good Health and Well-being",
-        value: waardes['health']
+        value: waardes['health'],
+        number: "3"
     },
     {
         category: "Quality Education",
-        value: waardes['education']
+        value: waardes['education'],
+        number: "4"
     },
     {
         category: "Gender Equality",
-        value: waardes['gender_equality']
+        value: waardes['gender_equality'],
+        number: "5"
     },
     {
         category: "Clean Water and Sanitation",
-        value: waardes['clean_water']
+        value: waardes['clean_water'],
+        number: "6"
     },
     {
         category: "Affordable and Clean Energy",
-        value: waardes['energy']
+        value: waardes['energy'],
+        number: "7"
     },
     {
         category: "Decent Work and Economic Growth",
-        value: waardes['economic_growth']
+        value: waardes['economic_growth'],
+        number: "8"
     },
     {
         category: "Industry Innovation and Infrastructure",
-        value: waardes['infrastructure']
+        value: waardes['infrastructure'],
+        number: "9"
     },
     {
         category: "Reduced Inequalities",
-        value: waardes['reduced_inequalities']
+        value: waardes['reduced_inequalities'],
+        number: "10"
     },
     {
         category: "Sustainable Cities and Communities",
-        value: waardes['sustainable_cities']
+        value: waardes['sustainable_cities'],
+        number: "11"
     },
     {
         category: "Responsible Consumption and Production",
-        value: waardes['durability']
+        value: waardes['durability'],
+        number: "12"
     },
     {
         category: "Climate Action",
-        value: waardes['climate']
+        value: waardes['climate'],
+        number: "13"
     },
     {
         category: "Life Below Water",
-        value: waardes['water_life']
+        value: waardes['water_life'],
+        number: "14"
     },
     {
         category: "Life on Land",
-        value: waardes['land_life']
+        value: waardes['land_life'],
+        number: "15"
     },
     {
         category: "Peace, Justice and Strong Institutions",
-        value: waardes['peace']
+        value: waardes['peace'],
+        number: "16"
     },
     {
         category: "Partnerships for the Goals",
-        value: waardes['partnership']
+        value: waardes['partnership'],
+        number: "17"
 
     }
 ];
@@ -96,7 +113,9 @@ series.dataFields.value = "value";
 series.dataFields.radiusValue = "value";
 series.dataFields.category = "category";
 // series.labels.template.disabled = true;
-series.labels.template.text = "{category}: {value.value}";
+series.labels.template.text = "{number}";
+series.labels.template.bent = true;
+series.alignLabels =false;
 series.slices.template.tooltipText = "{category}: {value.value}";
 
 
