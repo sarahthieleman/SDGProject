@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 
 Route::get('/adminpanel', 'AdminPanelController@index');
+Route::post('/opleiding_edit', 'AdminPanelController@editOpleidingIndex')->name("opleiding_edit");
+Route::post('/opleiding_update', 'AdminPanelController@updateOpleiding')->name("opleiding_update");
 
 Route::get('/view', function () {
     return view('view');

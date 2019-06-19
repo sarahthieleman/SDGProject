@@ -12,13 +12,13 @@ class OnderzoekGroepenSeeder extends Seeder
      */
     public function run()
     {
-        $this->groep("Economie & Management");
-        $this->groep("Technologie & Innovatie");
-        $this->groep("Educatie & Pedagogiek");
-        $this->groep("Zorg & Welzijn");
-        $this->groep("De Ruyter Academy");
-        $this->groep("Delta Academy");
-        $this->groep("Deeltijd Academy");
+        $this->groep("Customer insight & Value creation");
+        $this->groep("Data science");
+        $this->groep("Onderwijsexcellentie");
+        $this->groep("Healthy region");
+        $this->groep("Resilient Deltas");
+        $this->groep("Delta Academy Applied");
+        $this->groep("Marine Biobased Specialties");
     }
 
     public function groep($name) {

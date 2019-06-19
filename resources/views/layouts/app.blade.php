@@ -11,13 +11,17 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+    <script src="https://kit.fontawesome.com/efd6e51a73.js"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-grid.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-reboot.min.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -73,6 +77,9 @@
         </nav>
 
         <main class="py-4">
+            <div class="container-fluid">
+                @include('layouts.appmessage')
+            </div>
             @yield('content')
         </main>
     </div>
