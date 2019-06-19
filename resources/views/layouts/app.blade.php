@@ -168,13 +168,13 @@
         <!-- Header content -->
         <div class="header">
             <div class="hz-logo-border">
-                <a href="#" class="header-btn hz">
+                <a href="{{url("/home")}}" class="header-btn hz">
                     <img class="hz-logo" src="https://i.imgur.com/nL1pgEZ.png">
                 </a>
             </div>
             <div class="top-right">
                 <a href="#" class="header-btn find">Zoek</a>
-                <a href="#" class="header-btn login">Login</a>
+                <a href="{{url("/login")}}" class="header-btn login">Login</a>
             </div>
         </div>
         @yield('header')
