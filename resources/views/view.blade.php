@@ -8,9 +8,18 @@
     <body>
     <h1>Graph Page</h1>
     <div id="chartdiv"></div>
-    <script src="//www.amcharts.com/lib/4/core.js"></script>
-    <script src="//www.amcharts.com/lib/4/charts.js"></script>
-    <script src="//www.amcharts.com/lib/4/themes/animated.js"></script>
-    <script src="{{ URL::asset('js/radargraph.js') }}"></script>
+
+        <script>
+
+    var waardes = '{!! json_encode($opleiding_waardes, JSON_HEX_TAG) !!}';
+
+    console.log(waardes);
+    </script>
+
+    <script src="{{ URL::asset('js/core.js') }}"></script>
+    <script src="{{ URL::asset('js/charts.js') }}"></script>
+    <script src="{{ URL::asset('js/animated.js') }}"></script>
+    <script src="{{ URL::asset('js/piegraph.js') }}"></script>
+
 
     </body>

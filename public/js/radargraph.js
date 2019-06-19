@@ -5,7 +5,7 @@
 
 // Create chart instance
         var chart = am4core.create("chartdiv", am4charts.RadarChart);
-        chart.scrollbarX = new am4core.Scrollbar();
+
 
         var data = [
             {
@@ -89,14 +89,13 @@
 // Create axes
         var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
         categoryAxis.dataFields.category = "category";
-        categoryAxis.renderer.grid.template.location = 0;
-        categoryAxis.renderer.minGridDistance = 30;
+        categoryAxis.renderer.minGridDistance = 10;
         categoryAxis.tooltip.disabled = true;
-        categoryAxis.renderer.minHeight = 110;
+        categoryAxis.renderer.minHeight = 1100;
         categoryAxis.renderer.grid.template.disabled = true;
 //categoryAxis.renderer.labels.template.disabled = true;
         let labelTemplate = categoryAxis.renderer.labels.template;
-        labelTemplate.radius = am4core.percent(-60);
+        labelTemplate.radius = am4core.percent(0);
         labelTemplate.location = 0.5;
         labelTemplate.relativeRotation = 90;
 

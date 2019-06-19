@@ -12,77 +12,99 @@
 
 am4core.useTheme(am4themes_animated);
 
+waardes = JSON.parse(waardes);
+console.log(waardes)
+
 var chart = am4core.create("chartdiv", am4charts.PieChart);
 chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
 chart.data = [
     {
         category: "No poverty",
-        value: 260
+        value: waardes['poverty'],
+        number: "1"
     },
     {
         category: "Zero Hunger",
-        value: 230
+        value: waardes['hunger'],
+        number: "2"
+
     },
     {
-        category: "Good Health and Well",
-        value: 200
+        category: "Good Health and Well-being",
+        value: waardes['health'],
+        number: "3"
     },
     {
         category: "Quality Education",
-        value: 165
+        value: waardes['education'],
+        number: "4"
     },
     {
         category: "Gender Equality",
-        value: 139
+        value: waardes['gender_equality'],
+        number: "5"
     },
     {
         category: "Clean Water and Sanitation",
-        value: 260
+        value: waardes['clean_water'],
+        number: "6"
     },
     {
         category: "Affordable and Clean Energy",
-        value: 230
+        value: waardes['energy'],
+        number: "7"
     },
     {
         category: "Decent Work and Economic Growth",
-        value: 200
+        value: waardes['economic_growth'],
+        number: "8"
     },
     {
         category: "Industry Innovation and Infrastructure",
-        value: 165
+        value: waardes['infrastructure'],
+        number: "9"
     },
     {
         category: "Reduced Inequalities",
-        value: 139
+        value: waardes['reduced_inequalities'],
+        number: "10"
     },
     {
         category: "Sustainable Cities and Communities",
-        value: 260
+        value: waardes['sustainable_cities'],
+        number: "11"
     },
     {
         category: "Responsible Consumption and Production",
-        value: 230
+        value: waardes['durability'],
+        number: "12"
     },
     {
         category: "Climate Action",
-        value: 200
+        value: waardes['climate'],
+        number: "13"
     },
     {
         category: "Life Below Water",
-        value: 165
+        value: waardes['water_life'],
+        number: "14"
     },
     {
         category: "Life on Land",
-        value: 139
+        value: waardes['land_life'],
+        number: "15"
     },
     {
         category: "Peace, Justice and Strong Institutions",
-        value: 139
+        value: waardes['peace'],
+        number: "16"
     },
     {
         category: "Partnerships for the Goals",
-        value: 128
+        value: waardes['partnership'],
+        number: "17"
+
     }
 ];
 
@@ -90,14 +112,17 @@ var series = chart.series.push(new am4charts.PieSeries());
 series.dataFields.value = "value";
 series.dataFields.radiusValue = "value";
 series.dataFields.category = "category";
-series.slices.template.cornerRadius = 6;
-// series.colors.step = 3;
+// series.labels.template.disabled = true;
+series.labels.template.text = "{number}";
+series.labels.template.bent = true;
+series.alignLabels =false;
+series.slices.template.tooltipText = "{category}: {value.value}";
 
 
-
-series.hiddenState.properties.endAngle = -90;
 
 chart.legend = new am4charts.Legend();
+chart.legend.valueLabels.template.text = "{value.value}";
+
 series.colors.list = [
     am4core.color("#E32642"),
     am4core.color("#DEA54B"),
