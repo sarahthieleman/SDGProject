@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
 
 @section('header')
 @endsection
@@ -10,69 +9,7 @@
 
 @section('content')
 
-    sfwefqwe
-
-
-    wtewr
-
-    weqrwe
-    r<br>
-    sfwefqwe
-
-
-    wtewr
-
-    weqrwe
-    r<br>
-    sfwefqwe
-
-
-    wtewr
-
-    weqrwe
-    r<br>
-    sfwefqwe
-
-
-    wtewr
-
-    weqrwe
-    r<br>
-    sfwefqwe
-
-
-    wtewr
-
-    weqrwe
-    r<br>
-    sfwefqwe
-
-
-    wtewr
-
-    weqrwe
-    r<br>
-    sfwefqwe
-
-
-    wtewr
-
-    weqrwe
-    r<br>
-    sfwefqwe
-
-
-    wtewr
-
-    weqrwe
-    r<br>
-    sfwefqwe
-
-
-    wtewr
-
-    weqrwe
-    r<br>
+    <h1>-insert diagram-</h1>
 
 @endsection
 

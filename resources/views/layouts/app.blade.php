@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>@yield('title')</title>
+    <title>HZ University of Applied Sciences</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
@@ -34,7 +34,7 @@
 
         .top-right {
             float: right;
-            margin: 2px -8px 0 0;
+            margin: -70px -8px 0 0;
             padding-right: 5px;
         }
 
