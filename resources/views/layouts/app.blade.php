@@ -3,13 +3,25 @@
 <html>
 <head>
     <title>HZ University of Applied Sciences</title>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+    <script src="https://kit.fontawesome.com/efd6e51a73.js"></script>
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-grid.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-reboot.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
 
 
-
-        h1{
+        h1 {
             margin: 0%;
             padding: 0%;
         }
@@ -96,18 +108,7 @@
             }
         }
 
-        .container {
-            background-color: #f6f6f6;
 
-            grid-template-areas: "header header header" "content content content" "footer footer footer";
-
-            grid-template-columns: 1px 1fr 1px;
-            grid-template-rows: auto 1fr auto;
-            grid-gap: 0px;
-
-            height: 100vh;
-            margin: 0%;
-        }
 
         header {
             grid-area: header;
@@ -180,38 +181,12 @@
         @yield('header')
     </header>
 
-    <main style="text-align: center">
+    <main class="py-4">
         <!-- Main content -->
-        @yield('content')
-        <br>
-        <h1>Opleidingen</h1>
-        <div class="container-opleidingen">
-            <ul>
-                <li><a href="#" class="btn-sdg">Bedrijfskunde</a></li>
-                <li><a href="#" class="btn-sdg">Bouwkunde</a></li>
-                <li><a href="#" class="btn-sdg">Chemie</a></li>
-                <li><a href="#" class="btn-sdg">Civiele Techniek</a></li>
-                <li><a href="#" class="btn-sdg">Commerciele Economie</a></li>
-                <li><a href="#" class="btn-sdg">Communicatie</a></li>
-                <li><a href="#" class="btn-sdg">Engineering</a></li>
-                <li><a href="#" class="btn-sdg">Finance & Control (Bedrijfseconomie)</a></li>
-                <li><a href="#" class="btn-sdg">HBO-ICT</a></li>
-                <li><a href="#" class="btn-sdg">Human Resource Management</a></li>
-                <li><a href="#" class="btn-sdg">International Business</a></li>
-                <li><a href="#" class="btn-sdg">Leraar Basisonderwijs</a></li>
-                <li><a href="#" class="btn-sdg">Logistics Engineering</a></li>
-                <li><a href="#" class="btn-sdg">Maritiem Officier</a></li>
-                <li><a href="#" class="btn-sdg">Pedagogiek</a></li>
-                <li><a href="#" class="btn-sdg">Social Work</a></li>
-                <li><a href="#" class="btn-sdg">Sportkunde</a></li>
-                <li><a href="#" class="btn-sdg">Technische Bedrijfskunde</a></li>
-                <li><a href="#" class="btn-sdg">Tourism Management</a></li>
-                <li><a href="#" class="btn-sdg">Verpleegkunde</a></li>
-                <li><a href="#" class="btn-sdg">Verpleegkunde & Verloskunde</a></li>
-                <li><a href="#" class="btn-sdg">Watermanagement/Aquatische Ecotechnologie</a></li>
-                <li><a href="#" class="btn-sdg">Watermanagement/Delta Management</a></li>
-            </ul>
+        <div class="container-fluid">
+            @include('layouts.appmessage')
         </div>
+        @yield('content')
     </main>
 
     <aside style="text-align: center">
@@ -227,91 +202,4 @@
 </div>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
-    <script src="https://kit.fontawesome.com/efd6e51a73.js"></script>
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap-grid.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap-reboot.min.css') }}" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <main class="py-4">
-            <div class="container-fluid">
-                @include('layouts.appmessage')
-            </div>
-            @yield('content')
-        </main>
-    </div>
-</body>
-</html>
