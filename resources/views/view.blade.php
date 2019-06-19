@@ -1,25 +1,24 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <link rel="stylesheet" href="{{ URL::asset('css/graph.css') }}" />
-        <title>Graph View</title>
-    </head>
-    <body>
-    <h1>Graph Page</h1>
-    <div id="chartdiv"></div>
+@extends('layouts.app')
 
-        <script>
-
-    var waardes = '{!! json_encode($opleiding_waardes, JSON_HEX_TAG) !!}';
-
-    console.log(waardes);
+@section('content')
+    <script>
+        var waardes = '{!! json_encode($opleiding_waardes, JSON_HEX_TAG) !!}';
+        console.log(waardes);
     </script>
-
-    <script src="{{ URL::asset('js/core.js') }}"></script>
-    <script src="{{ URL::asset('js/charts.js') }}"></script>
-    <script src="{{ URL::asset('js/animated.js') }}"></script>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">Graph</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="chartdiv"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="{{ URL::asset('js/piegraph.js') }}"></script>
+    @endsection
 
 
-    </body>
+

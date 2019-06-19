@@ -4,7 +4,7 @@
     <script src="{{ asset('js/slider.js') }}" defer></script>
     <div class="container">
         <div class="card">
-            <div class="card-header">Admin Panel</div>
+            <div class="card-header">Opleiding bewerken | <a href="{{url('/adminpanel')}}">Terug</a></div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-12">
