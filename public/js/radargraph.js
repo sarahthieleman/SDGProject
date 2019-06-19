@@ -6,6 +6,7 @@
 // Create chart instance
         var chart = am4core.create("chartdiv", am4charts.RadarChart);
 
+
         var data = [
             {
                 category: "No poverty",
@@ -129,6 +130,4 @@
         chart.cursor = new am4charts.RadarCursor();
         chart.cursor.innerRadius = am4core.percent(50);
         chart.cursor.lineY.disabled = true;
-
-
 

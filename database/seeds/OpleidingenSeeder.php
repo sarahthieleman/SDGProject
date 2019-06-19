@@ -65,6 +65,7 @@ class OpleidingenSeeder extends Seeder
             'land_life' => rand(1, 5),
             'peace' => rand(1, 5),
             'partnership' => rand(1, 5)
+
         ]);
     }
 }

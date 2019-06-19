@@ -21,4 +21,5 @@
     <script src="{{ URL::asset('js/animated.js') }}"></script>
     <script src="{{ URL::asset('js/piegraph.js') }}"></script>
 
+
     </body>

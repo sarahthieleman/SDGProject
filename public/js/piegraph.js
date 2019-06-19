@@ -21,6 +21,7 @@ chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 chart.data = [
     {
         category: "No poverty",
+
         value: waardes['poverty']
     },
     {
@@ -86,6 +87,7 @@ chart.data = [
     {
         category: "Partnerships for the Goals",
         value: waardes['partnership']
+
     }
 ];
 
