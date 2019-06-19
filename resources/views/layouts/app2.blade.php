@@ -7,7 +7,26 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
 
+        html, body, .grid-container { height: 100%; margin: 0; }
 
+        .grid-container * {
+            border: 1px solid red;
+            position: relative;
+        }
+
+        .grid-container *:after {
+            content:attr(class);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 1.6fr;
+            grid-template-areas: "." ".";
+        }
 
         h1{
             margin: 0%;
@@ -163,7 +182,7 @@
 
 
 <body class=“body-sdg”>
-<div class="grid-container">
+<div class="container">
     <header style="text-align: center">
         <!-- Header content -->
         <div class="header">
@@ -175,6 +194,7 @@
             <div class="top-right">
                 <a href="#" class="header-btn find">Zoek</a>
                 <a href="#" class="header-btn login">Login</a>
+                <a href="#" class="header-btn language">EN</a>
             </div>
         </div>
         @yield('header')

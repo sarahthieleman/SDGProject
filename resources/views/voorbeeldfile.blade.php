@@ -21,3 +21,10 @@
 @section('footer')
     <p>This is my footer content.</p>
 @endsection
+
+
+
+
+<style>
+
+</style>
