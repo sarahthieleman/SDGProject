@@ -22,88 +22,106 @@ chart.data = [
     {
         category: "No poverty",
         value: waardes['poverty'],
-        number: "1"
+        number: "1",
+        bullet: "img/goal01.png"
     },
     {
         category: "Zero Hunger",
         value: waardes['hunger'],
-        number: "2"
+        number: "2",
+        bullet: "img/goal01.png"
 
     },
     {
         category: "Good Health and Well-being",
         value: waardes['health'],
-        number: "3"
+        number: "3",
+        bullet: "img/goal01.png"
+
     },
     {
         category: "Quality Education",
         value: waardes['education'],
-        number: "4"
+        number: "4",
+        bullet: "img/goal01.png"
     },
     {
         category: "Gender Equality",
         value: waardes['gender_equality'],
-        number: "5"
+        number: "5",
+        bullet: "img/goal01.png"
     },
     {
         category: "Clean Water and Sanitation",
         value: waardes['clean_water'],
-        number: "6"
+        number: "6",
+        bullet: "img/goal01.png"
     },
     {
         category: "Affordable and Clean Energy",
         value: waardes['energy'],
-        number: "7"
+        number: "7",
+        bullet: "img/goal01.png"
     },
     {
         category: "Decent Work and Economic Growth",
         value: waardes['economic_growth'],
-        number: "8"
+        number: "8",
+        bullet: "img/goal01.png"
     },
     {
         category: "Industry Innovation and Infrastructure",
         value: waardes['infrastructure'],
-        number: "9"
+        number: "9",
+        bullet: "img/goal01.png"
     },
     {
         category: "Reduced Inequalities",
         value: waardes['reduced_inequalities'],
-        number: "10"
+        number: "10",
+        bullet: "img/goal01.png"
     },
     {
         category: "Sustainable Cities and Communities",
         value: waardes['sustainable_cities'],
-        number: "11"
+        number: "11",
+        bullet: "img/goal01.png"
     },
     {
         category: "Responsible Consumption and Production",
         value: waardes['durability'],
-        number: "12"
+        number: "12",
+        bullet: "img/goal01.png"
     },
     {
         category: "Climate Action",
         value: waardes['climate'],
-        number: "13"
+        number: "13",
+        bullet: "img/goal01.png"
     },
     {
         category: "Life Below Water",
         value: waardes['water_life'],
-        number: "14"
+        number: "14",
+        bullet: "img/goal01.png"
     },
     {
         category: "Life on Land",
         value: waardes['land_life'],
-        number: "15"
+        number: "15",
+        bullet: "img/goal01.png"
     },
     {
         category: "Peace, Justice and Strong Institutions",
         value: waardes['peace'],
-        number: "16"
+        number: "16",
+        bullet: "img/goal01.png"
     },
     {
         category: "Partnerships for the Goals",
         value: waardes['partnership'],
-        number: "17"
+        number: "17",
+        bullet: "img/goal01.png"
 
     }
 ];
@@ -121,24 +139,28 @@ series.slices.template.tooltipText = "{category}: {value.value}";
 
 
 chart.legend = new am4charts.Legend();
-chart.legend.valueLabels.template.text = "{value.value}";
+chart.legend.valueLabels.template.text = ": {value.value}";
 
 series.colors.list = [
-    am4core.color("#E32642"),
-    am4core.color("#DEA54B"),
-    am4core.color("#559C50"),
-    am4core.color("#CC1F34"),
-    am4core.color("#ED4135"),
-    am4core.color("#33BFE3"),
-    am4core.color("#FAC332"),
-    am4core.color("#9E1E44"),
-    am4core.color("#EA6D33"),
-    am4core.color("#D52369"),
-    am4core.color("#F59E3A"),
-    am4core.color("#BF8D31"),
+    am4core.color("#EB1C2E"),
+    am4core.color("#D3A02B"),
+    am4core.color("#279B48"),
+    am4core.color("#C21F32"),
+    am4core.color("#EF402B"),
+    am4core.color("#01AED9"),
+    am4core.color("#FCB712"),
+    am4core.color("#8F1836"),
+    am4core.color("#F36D26"),
+    am4core.color("#E01483"),
+    am4core.color("#FA9D26"),
+    am4core.color("#CE8D29"),
     am4core.color("#427E48"),
-    am4core.color("#2997D4"),
-    am4core.color("#5CB94E"),
-    am4core.color("#1A6B9E"),
-    am4core.color("#1A6B9E")
+    am4core.color("#47773D"),
+    am4core.color("#3DB04B"),
+    am4core.color("#02558B"),
+    am4core.color("#183668")
 ];
+
+
+
+
