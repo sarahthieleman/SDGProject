@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('opleidingen');
 });
+
+Route::get('/adminpanel', 'AdminPanelController@index');
+Route::post('/opleiding_edit', 'AdminPanelController@editOpleidingIndex')->name("opleiding_edit");
+Route::post('/opleiding_update', 'AdminPanelController@updateOpleiding')->name("opleiding_update");
+
+Route::get('/view', 'GraphController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
