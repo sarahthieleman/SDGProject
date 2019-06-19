@@ -65,7 +65,7 @@
         .container-opleidingen ul {
             text-align: center;
             display: table;
-            padding-top: 20px;
+            padding: 20px;
         }
 
         .container-opleidingen ul li {
