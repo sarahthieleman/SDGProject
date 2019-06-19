@@ -13,4 +13,17 @@ class Opleiding extends Model
         'name',
         'onderzoek_groep_id'
     ];
+
+    public function getGroup() {
+        $g = OnderzoekGroep::find($this->onderzoek_groep_id);
+        return $g;
+    }
+
+    public function getValues() {
+        $g = OpleidingWaardes::where('opleiding_id', $this->id)
+            ->get()->first();
+
+        return $g;
+
+    }
 }
