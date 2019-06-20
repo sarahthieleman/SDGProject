@@ -17,6 +17,7 @@ class CreateOpleidingenTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('onderzoek_groep_id')->unsigned();
+            $table->string('contact')->nullable();
 
             //foreign keys
             $table->foreign('onderzoek_groep_id')

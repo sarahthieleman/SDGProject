@@ -50,6 +50,9 @@ class AdminPanelController extends Controller
         $values->partnership = $request['partnership'];
         $values->save();
 
+        $opleiding->contact = $request['contact'];
+        $opleiding->save();
+
         return redirect("adminpanel")->with('success', $opleiding->name.' opgeslagen.');
 
     }
