@@ -7,7 +7,7 @@
     </script>
     <div class="container">
         <div class="card">
-            <div class="card-header">Graph</div>
+            <div class="card-header">{{$opleiding->name}} | <a href="{{url('/home')}}">Terug</a></div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-12">

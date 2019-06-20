@@ -173,13 +173,19 @@
         <!-- Header content -->
         <div class="header">
             <div class="hz-logo-border">
-                <a href="#" class="header-btn hz">
+                <a href="{{url('/home')}}" class="header-btn hz">
                     <img class="hz-logo" src="https://i.imgur.com/nL1pgEZ.png">
                 </a>
             </div>
             <div class="top-right">
-                <a href="#" class="header-btn find">Zoek</a>
-                <a href="#" class="header-btn login">Login</a>
+                <a href="{{url('/home')}}" class="header-btn find">Home</a>
+                <a href="{{url('/sdg')}}" class="header-btn find">SDGs</a>
+                @if (!Auth::check())
+                <a href="{{url('login')}}" class="header-btn login">Login</a>
+                    @else
+                    <a href="{{url('/adminpanel')}}" class="header-btn find">Admin Panel</a>
+                    <a href="{{url('logout')}}" class="header-btn login">Logout</a>
+                @endif
             </div>
         </div>
         @yield('header')

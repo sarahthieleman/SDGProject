@@ -85,7 +85,7 @@
                             <br>
                             <label for="contact">Contact (E-Mail)</label>
                             <br>
-                            <input width="10%" name="contact" id="contact" type="text" placeholder="{{$opleiding->contact}}" />
+                            <input width="10%" name="contact" id="contact" type="text" placeholder="{{$opleiding->contact}}" value="{{$opleiding->contact}}" />
                             <br><br>
                             <button class="btn btn-success" type="submit">Opslaan</button>
                         </form>

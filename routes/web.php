@@ -24,6 +24,7 @@ Route::post('/opleiding_update', 'AdminPanelController@updateOpleiding')->name("
 Route::get('/view', 'GraphController@index');
 Route::get('/graph/{id}' , 'GraphController@graph');
 Auth::routes();
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
