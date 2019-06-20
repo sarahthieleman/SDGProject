@@ -22,105 +22,105 @@ chart.data = [
     {
         category: "No poverty",
         value: waardes['poverty'],
-        number: "1",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Zero Hunger",
         value: waardes['hunger'],
-        number: "2",
+        number: "",
         bullet: "img/goal01.png"
 
     },
     {
         category: "Good Health and Well-being",
         value: waardes['health'],
-        number: "3",
+        number: "",
         bullet: "img/goal01.png"
 
     },
     {
         category: "Quality Education",
         value: waardes['education'],
-        number: "4",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Gender Equality",
         value: waardes['gender_equality'],
-        number: "5",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Clean Water and Sanitation",
         value: waardes['clean_water'],
-        number: "6",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Affordable and Clean Energy",
         value: waardes['energy'],
-        number: "7",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Decent Work and Economic Growth",
         value: waardes['economic_growth'],
-        number: "8",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Industry Innovation and Infrastructure",
         value: waardes['infrastructure'],
-        number: "9",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Reduced Inequalities",
         value: waardes['reduced_inequalities'],
-        number: "10",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Sustainable Cities and Communities",
         value: waardes['sustainable_cities'],
-        number: "11",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Responsible Consumption and Production",
         value: waardes['durability'],
-        number: "12",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Climate Action",
         value: waardes['climate'],
-        number: "13",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Life Below Water",
         value: waardes['water_life'],
-        number: "14",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Life on Land",
         value: waardes['land_life'],
-        number: "15",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Peace, Justice and Strong Institutions",
         value: waardes['peace'],
-        number: "16",
+        number: "",
         bullet: "img/goal01.png"
     },
     {
         category: "Partnerships for the Goals",
         value: waardes['partnership'],
-        number: "17",
+        number: "",
         bullet: "img/goal01.png"
 
     }
