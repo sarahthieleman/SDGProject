@@ -19,6 +19,8 @@ Route::get('/adminpanel', 'AdminPanelController@index');
 Route::get('/sdg', 'SdgController@index');
 Route::get('/sdgoverview/{num}', 'SdgController@sdgOverview');
 Route::post('/opleiding_edit', 'AdminPanelController@editOpleidingIndex')->name("opleiding_edit");
+Route::post('/project_add', 'AdminPanelController@addProjectIndex')->name("project_add");
+Route::post('/project_create', 'AdminPanelController@createProject')->name("project_create");
 Route::post('/opleiding_update', 'AdminPanelController@updateOpleiding')->name("opleiding_update");
 
 Route::get('/view', 'GraphController@index');

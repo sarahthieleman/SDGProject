@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\OpleidingWaardes;
+use App\Project;
 use Illuminate\Http\Request;
 use App\Opleiding;
 
@@ -20,11 +21,26 @@ class AdminPanelController extends Controller
         ]);
     }
 
+    public function addProjectIndex(Request $request) {
+        return view('project_add')->with([
+            'opleiding' => Opleiding::find($request['opleiding_id'])
+        ]);
+    }
+
     public function editOpleidingIndex(Request $request) {
         return view('opleiding_edit')->with([
            'opleiding' =>  Opleiding::findOrFail($request['opleiding_id']),
             'values' => Opleiding::findOrFail($request['opleiding_id'])->getValues()
         ]);
+    }
+
+    public function createProject(Request $request) {
+        $opleiding = Opleiding::findOrFail($request['opleiding_id']);
+        Project::create([
+            'name' => $request['name'],
+            'opleiding_id' => $opleiding->id
+        ]);
+        return redirect("adminpanel")->with("success", "Project '".$request['name']."' aangemaakt voor ".$opleiding->name);
     }
 
     public function updateOpleiding(Request $request) {

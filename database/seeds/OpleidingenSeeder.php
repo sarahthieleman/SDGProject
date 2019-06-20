@@ -24,7 +24,7 @@ class OpleidingenSeeder extends Seeder
         $this->opleiding("HBO-ICT", 2);
         $this->opleiding("Human Resource Management", 1);
         $this->opleiding("International Business", 1);
-        $this->opleiding("Leraar Basisonderwijs)", 3);
+        $this->opleiding("Leraar Basisonderwijs", 3);
         $this->opleiding("Logistics Engineering", 1);
         $this->opleiding("Maritiem Officier", 5);
         $this->opleiding("Social Work", 4);

@@ -25,6 +25,13 @@
                                         {{$o->getGroup()->name}}
                                     </td>
                                     <td width="1%">
+                                        <form action="{{route('project_add')}}" method="POST">
+                                            {{csrf_field()}}
+                                            <input type="hidden" name="opleiding_id" value="{{$o->id}}">
+                                            <button class="btn btn-link" type="submit"><i class="fas fa-plus"></i></button>
+                                        </form>
+                                    </td>
+                                    <td width="1%">
                                         <form action="{{route('opleiding_edit')}}" method="POST">
                                             {{csrf_field()}}
                                             <input type="hidden" name="opleiding_id" value="{{$o->id}}">
