@@ -100,6 +100,14 @@
             font-weight: lighter;
         }
 
+        .progress {
+            height: 20px;
+        }
+        .progress > svg {
+            height: 100%;
+            display: block;
+        }
+
         @media only screen and (max-width: 500px) {
             .container-opleidingen {
                 text-align: left;

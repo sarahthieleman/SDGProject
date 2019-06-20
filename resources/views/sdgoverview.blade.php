@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+    <script>
+        var ProgressBar = require('progressbar.js')
+        var line = new ProgressBar.Line('#container');
+    </script>
     <div class="container">
         <div class="card">
             <div class="card-header">{{$name}} | <a href="{{url('/sdg')}}">Terug</a></div>
@@ -25,7 +29,7 @@
                                         {{$o->getGroup()->name}}
                                     </td>
                                     <td>
-                                        <progress max="5" value="{{$scores[$o->id]}}"></progress>
+                                        <progress class="progress" id="progress" max="5" value="{{$scores[$o->id]}}"></progress>
                                         &nbsp;&nbsp;{{$scores[$o->id]}}
                                     </td>
                                     <td>
