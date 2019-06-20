@@ -7,9 +7,13 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
     <script src="https://kit.fontawesome.com/efd6e51a73.js"></script>
+    <script src="{{ URL::asset('js/core.js') }}"></script>
+    <script src="{{ URL::asset('js/charts.js') }}"></script>
+    <script src="{{ URL::asset('js/animated.js') }}"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="{{ URL::asset('css/graph.css') }}" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -32,8 +36,8 @@
 
         .header {
             background-color: white;
-            margin: 18px 0 0 -8px;
-            height: 20%;
+            margin: 10px 0 0 -8px;
+            height: 13%;
             vertical-align: center;
         }
 

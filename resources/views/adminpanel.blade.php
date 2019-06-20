@@ -19,7 +19,7 @@
                             @foreach($opleidingen as $o)
                                 <tr>
                                     <td width="20%%">
-                                        {{$o->name}}
+                                        <a href="{{url('graph/'.$o->id)}}">{{$o->name}}</a>
                                     </td>
                                     <td width="20%%">
                                         {{$o->getGroup()->name}}
@@ -47,3 +47,4 @@
         </div>
     </div>
 @endsection
+

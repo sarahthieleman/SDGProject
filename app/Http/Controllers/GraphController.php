@@ -9,12 +9,19 @@ use Illuminate\Http\Request;
 
 class GraphController extends Controller
 {
-    public function index()
+    public function index($id)
     {
 
         return view('view')->with([
-            'opleiding' => Opleiding::all()->first(),
-            'opleiding_waardes' => OpleidingWaardes::all()->first()
+            'opleiding' => Opleiding::findOrFail($id),
+            'opleiding_waardes' => OpleidingWaardes::find($id)
+        ]);
+    }
+
+    public function graph($id) {
+        return view('view')->with([
+            'opleiding' => Opleiding::findOrFail($id),
+            'opleiding_waardes' => OpleidingWaardes::find($id)
         ]);
     }
 }
