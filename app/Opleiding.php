@@ -11,7 +11,8 @@ class Opleiding extends Model
 
     protected $fillable = [
         'name',
-        'onderzoek_groep_id'
+        'onderzoek_groep_id',
+        'contact'
     ];
 
     public function getGroup() {

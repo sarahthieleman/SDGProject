@@ -13,6 +13,7 @@
                                 <th>Opleidingen</th>
                                 <th>Onderzoekgroep</th>
                                 <th>Score</th>
+                                <th>Contact</th>
                             </tr>
                             </thead>
                             @foreach($opleidingen as $o)
@@ -26,6 +27,9 @@
                                     <td>
                                         <progress max="5" value="{{$scores[$o->id]}}"></progress>
                                         &nbsp;&nbsp;{{$scores[$o->id]}}
+                                    </td>
+                                    <td>
+                                      <a href="mailto:{{$o->contact}}">{{$o->contact}}</a>
                                     </td>
                                 </tr>
                             @endforeach
